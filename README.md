@@ -1,2 +1,2 @@
 # MechaCar_Statistical_Analysis
-Using R to analyze vehicle production metrics
+Analyzing vehicle production metrics using R.

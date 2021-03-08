@@ -57,7 +57,7 @@ Because the summary results from the suspension coils data revealed lot to lot v
 
 * *H<sub>0</sub>: There’s no statistical differences between the observed sample mean and its presumed population mean.*
 
-* *H<sub>A</sub>): There’s a statistical difference between the observed sample mean and its presumed population mean.*
+* *H<sub>A</sub>: There’s a statistical difference between the observed sample mean and its presumed population mean.*
 
 
 ### Results

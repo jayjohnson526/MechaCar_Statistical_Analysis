@@ -37,11 +37,12 @@ Next, the team wanted to know if the manufacturing process for the suspension co
 For this analysis, we generated a summary statistics table of the pounds per square inch (PSI) of the suspension coils from each manufacturing lot.
 
 ### Results
+##### Total Suspension Summary
 ![Total Suspension Summary](images/total_summary.png)
 
 A summary of the entire dataset (including all manufactuirng lots) shows that the mean PSI of the suspension coils is 1498.78 with a variance of 62.29. Because the variance is less than 100, the manufacturing data meets the design specification for all manufacturing lots in total.
 
-
+##### Lot Suspension Summary
 ![Lot Suspension Summary](images/lot_summary.png)
 
 Looking at each lot individually, we can see that all lots (1-3) produce similar mean PSI values (~1500 PSI), however Lot3 produces extremely high variance (170.28) compared to Lot1 and Lot2 (0.97 and 7.46 respectively).
@@ -58,19 +59,24 @@ Because the summary results from the suspension coils data revealed lot to lot v
 
 * *H<sub>A</sub>): There’s a statistical difference between the observed sample mean and its presumed population mean.*
 
+
 ### Results
+##### Total T-Test Summary
 ![Total T-Test Summary](images/total_ttest.png)
 
 Comparing the PSI values from all manufacturing lots to the population mean produces a p-value of 0.06, which does not pass our signficance level of 0.05. Therefore, we do not have enough evidence to reject the null hypothesis. This means that when analyzing PSI values from all manufacturing lots combined, there is not significant variation in the lots compared to the population mean. 
 
+##### Lot1 T-Test Sumamry
 ![Lot1 T-Test Sumamry](images/lot1_ttest.png)
 
 Comparing the PSI values from Lot1 to the population mean produces a p-value of 1. Therefore we fail to reject the null. PSI values from Lot1 are not significantly different from the population mean. This is not unexpected because the lot summary table from above shows a mean value of 1,500 PSI with a variance of 0.97 PSI for Lot1.
 
+##### Lot2 T-Test Summary
 ![Lot2 T-Test Summary](images/lot2_ttest.png)
 
 Comparing the PSI values from Lot2 to the population mean produces a p-value of 0.60, which does not meet our signficance level of 0.05. Therefore we fail to reject the null. PSI values from Lot2 are not significantly different from the population mean. 
 
+##### Lot3 T-Test Summary
 ![Lot3 T-Test Summary](images/lot3_ttest.png)
 
 Comparing the PSI values from Lot3 to the population mean produces a p-value of 0.04. This does meet our significant level of 0.05 meaning that we have enough evidence to reject the null. PSI values from Lot3 are significantly different from the population mean. This supports our previous findings from the summary table, which revealed that the variance in PSI values from Lot3 did not meet the design specificaiton for the amount of variance allowed. 

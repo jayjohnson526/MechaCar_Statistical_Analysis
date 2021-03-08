@@ -10,4 +10,7 @@ total_summary <- suspension_table %>% summarize(Mean=mean(PSI),Median=median(PSI
 lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create summary table for PSI grouped by lot number
 
 # Deliverable 3
-t.test(())
+t.test((suspension_table$PSI),mu=1500) #compare all manufacturing lots to the population mean
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot1")$PSI, mu=1500) #compare the psi values from lot1 to the population mean
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot2")$PSI, mu=1500) #compare the psi values from lot2 to the population mean
+t.test(subset(suspension_table, Manufacturing_Lot == "Lot3")$PSI, mu=1500) #compare the psi values from lot3 to the population mean
